@@ -20,23 +20,25 @@
 ---
 
 ## 📖 Table of Contents
-1. [Project Overview](#-project-overview)
+1. [Overview & System Features](#-overview--system-features)
 2. [Video Demonstration](#-video-demonstration)
-3. [Key Features](#-key-features)
-4. [System Architecture & Tech Stack](#-system-architecture--tech-stack)
-5. [In-Depth Mechanism & Mathematics](#-in-depth-mechanism--mathematics)
-6. [Emergency Action Protocol](#-emergency-action-protocol)
-7. [Prerequisites & Installation](#-prerequisites--installation)
-8. [Usage Guide](#-usage-guide)
-9. [Future Roadmap](#-future-roadmap)
+3. [System Architecture & Tech Stack](#-system-architecture--tech-stack)
+4. [In-Depth Mechanism & Mathematics](#-in-depth-mechanism--mathematics)
+5. [Emergency Action Protocol](#-emergency-action-protocol)
+6. [Prerequisites & Installation](#-prerequisites--installation)
+7. [Usage Guide](#-usage-guide)
+8. [Future Roadmap](#-future-roadmap)
 
 ---
 
-## 🌌 Project Overview
+## 🌌 Overview & System Features
 
-Driver fatigue and distraction are leading causes of fatal road accidents. **SafeDrive AI** is a comprehensive Driver Monitoring System (DMS) built to run entirely on edge hardware (like a dashboard-mounted laptop or Raspberry Pi). 
+SafeDrive AI is a complete, beginner-friendly telematics and computer vision system designed to enhance profile value for engineering applications. By combining multi-modal structural tracking with defensive cloud routing pipelines, it provides high-impact real-world usability.
 
-Utilizing advanced neural networks for facial geometry and posture estimation, the system actively monitors the driver's state. If critical danger markers—such as prolonged eye closure, extreme yawning, or a collapsed posture—are detected, it triggers a multi-stage emergency protocol encompassing in-cabin alarms and global cellular distress calls.
+* **Multi-Modal Fatigue Profiling:** Monitors both eye separation (PERCLOS tracking) and wide yawns (Mouth Opening Ratio) continuously via facial landmarks.
+* **Asynchronous Alarm Pipeline:** Spins off a local cabin warning siren using Pygame onto an independent background thread, preventing frame lockup.
+* **Network Geolocation Mapping:** Automatically queries global internet routers to pull live city names and coordinates within 3 seconds, injecting coordinates seamlessly into emergency payloads.
+* **Comprehensive Linear Continuity:** Pins the local warning, device isolation loop, network ping, and Twilio voice API dispatches under a single controlled logical umbrella block.
 
 ---
 
@@ -46,17 +48,6 @@ Utilizing advanced neural networks for facial geometry and posture estimation, t
 [![Watch the Demo](https://img.youtube.com/vi/YOUR_YOUTUBE_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/YOUR_YOUTUBE_VIDEO_ID)
 
 > **Click the image above to watch the live simulation of the fatigue detection and emergency SOS routing!**
-
----
-
-## ✨ Key Features
-
-* **Microsleep Detection:** Tracks eyelid proximity in real-time, buffering frames to differentiate between normal blinks and dangerous sleep.
-* **Distraction & Yawn Tracking:** Monitors mouth expansion to detect severe fatigue before sleep even occurs.
-* **Crash Posture Recognition:** Tracks the driver's nose coordinate to detect physical collapse or severe slouching toward the steering wheel.
-* **Zero-Latency Audio Alarm:** Utilizes multithreading to fire a high-decibel cabin siren without freezing the computer vision video feed.
-* **Live Telemetry & Geolocation:** Automatically pings IP-based satellite coordinates if an emergency is verified.
-* **Automated Cellular SOS:** Integrates with Twilio's cloud communication API to place a synthesized voice call to emergency contacts or dispatch units.
 
 ---
 
@@ -127,7 +118,7 @@ When any of the three danger thresholds are breached, the script locks into an e
 
 **1. Clone the Source Code**
 ```bash
-git clone https://github.com/SuryanshOps/_Virtual_Mouse.git
+git clone https://github.com/SuryanshOps/Driver_Minitoring_System.git
 cd Driver_Monitoring_System
 ```
 
