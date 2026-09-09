@@ -134,7 +134,7 @@ pip install opencv-python mediapipe numpy twilio requests pygame
 ```
 
 **4. Configure Telematics (Twilio)**
-Open `safedrive_ai_production.py` and replace the placeholder credentials with your Twilio dashboard keys:
+Open `main2.py` and replace the placeholder credentials with your Twilio dashboard keys:
 ```python
 TWILIO_ACCOUNT_SID = "ACxxxxxxxxxxxxxxxxxxxxxxxx"
 TWILIO_AUTH_TOKEN  = "your_auth_token_here"
@@ -149,7 +149,7 @@ TARGET_PHONE_NUM   = "+91XXXXXXXXXX"
 1. Place your `alarm.wav` sound file in the same folder as the script.
 2. Launch the monitoring system:
    ```bash
-   python safedrive_ai_production.py
+   python main2.py
    ```
 3. A HUD window will appear displaying live tracking metrics for your eyes and posture. 
 4. **To Test Sleep Detection:** Close your eyes for 3 seconds.
