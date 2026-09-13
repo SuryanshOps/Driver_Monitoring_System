@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚗 SafeDrive AI: Integrated Driver Monitoring & Telematics
+# 🚗 SafeDrive AI: Integrated Driver Monitoring & Telematics 🐢
 
 <!-- Replace 'assets/demo.gif' with the path to your actual GIF once recorded -->
 <img src="assets/demo.gif" alt="SafeDrive AI Demo" width="700" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
